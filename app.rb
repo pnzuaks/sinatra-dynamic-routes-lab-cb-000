@@ -11,6 +11,7 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num1 = params[:number1]
     @num2 = params[:number2]
+    
     "#{@num.to_i * @num.to_i}"
   end
 
