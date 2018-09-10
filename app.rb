@@ -3,9 +3,8 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get "'/say/:word1/:word2/:word3/:word4/:word5'" do
-    @op = params[:operation]
-    @num1 = params[:number1]
-    @num2 = params[:number2]
+    @word1 = params[:word1]
+    @word1 = params[:word1]
   end
 
   get "/square/:number" do
