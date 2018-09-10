@@ -2,8 +2,10 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  get "'/say/:word1/:word2/:word3/:word4/:word5'" do
-    @word1 = params[:word1]
+  get "'/reversename/:name'" do
+    @name = params[:name]
+
+
   end
 
   get "'/say/:word1/:word2/:word3/:word4/:word5'" do
