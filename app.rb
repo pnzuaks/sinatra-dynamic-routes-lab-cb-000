@@ -39,10 +39,10 @@ class App < Sinatra::Base
   end
 
   get "/say/:number/:phrase" do
-    @num = params[:number].to_i
+    @num = params[:number]
     @phrase = params[:phrase]
 
-    @num.times do
+    @num.to_i.times do
     "#{@phrase.gsub("%20", " ")}"
     end
   end
