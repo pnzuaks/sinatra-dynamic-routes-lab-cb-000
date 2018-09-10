@@ -2,6 +2,12 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
+  get "'/:operation/:number1/:number2'" do
+    @op = params[:operation]
+    @num1 = params[:number1]
+    @num2 = params[:number2]
+  end
+
   get "/square/:number" do
     @num = params[:number]
     "#{@num.to_i * @num.to_i}"
