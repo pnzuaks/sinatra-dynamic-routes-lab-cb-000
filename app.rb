@@ -38,5 +38,6 @@ class App < Sinatra::Base
     end
   end
 
+  get 
 
 end
