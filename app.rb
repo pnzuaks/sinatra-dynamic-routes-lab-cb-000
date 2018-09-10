@@ -45,8 +45,6 @@ class App < Sinatra::Base
     @num.to_i.times do
       "#{@phrase}"
     end
-
-
   end
 
 
