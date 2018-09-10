@@ -7,7 +7,7 @@ class App < Sinatra::Base
     "#{@name.reverse!}"
   end
 
-  get "'/say/:word1/:word2/:word3/:word4/:word5'" do
+  get "/say/:word1/:word2/:word3/:word4/:word5" do
     @word1 = params[:word1]
     @word2 = params[:word2]
     @word3 = params[:word3]
@@ -22,7 +22,7 @@ class App < Sinatra::Base
     "#{@num.to_i * @num.to_i}"
   end
 
-  get "'/:operation/:number1/:number2'" do
+  get "/:operation/:number1/:number2" do
     @op = params[:operation]
     @num1 = params[:number1]
     @num2 = params[:number2]
