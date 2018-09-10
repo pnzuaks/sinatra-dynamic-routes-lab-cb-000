@@ -44,7 +44,7 @@ class App < Sinatra::Base
     # @fixphrase = @phrase.gsub("%20", " ")
 
     # @num.to_i.times do
-    puts "#{@phrase}"
+    "#{@phrase}"
     # end
   end
 
