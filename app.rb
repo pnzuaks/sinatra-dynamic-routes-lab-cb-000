@@ -9,7 +9,7 @@ class App < Sinatra::Base
     @word4 = params[:word4]
     @word5 = params[:word5]
 
-    "#{@word1  @num.to_i}"
+    "#{@word1}" + "#{@word1}" + 
   end
 
   get "/square/:number" do
