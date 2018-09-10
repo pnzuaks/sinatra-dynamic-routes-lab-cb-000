@@ -38,6 +38,9 @@ class App < Sinatra::Base
     end
   end
 
-  get 
+  get "/say/:number/:phrase" do
+
+  end
+  end
 
 end
